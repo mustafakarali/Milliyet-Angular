@@ -1,0 +1,26 @@
+<div class="row animated fadeIn" ng-show="haberler">
+	<div class="col-lg-12 haber text-center"  ng-repeat="haber in haberler">
+		<noscript><img class="haber_resim" src='{{haber.ImageURL || "http://placehold.it/350x150" }}'  /></noscript>
+		<a href="#/haber/{{haber.ID}}" title="Haberi oku">
+			<center>
+						<img class="haber_resim img-responsive" src='{{haber.ImageURL || "http://placehold.it/350x150" }}'  />
+
+			</center>
+		</a>
+		<div class="haber_baslik source">
+			<a href="#/haber/{{haber.ID}}" title="Haberi oku"><h2>{{haber.Title}}</h2></a>
+			<p>{{haber.Spot || haber.Title + " haberini görüntülemek resmine tıklayın"}}</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="row" ng-show="error">
+	<div class="col-lg-12  animated fadeIn">
+		<div class="alert alert-dismissable alert-info" style="margin-top:100px">
+			<button type="button" class="close" data-dismiss="alert">×</button>
+			<h4>Milliyet.com.tr'ye bağlanılıyor</h4>
+			<p>Lütfen bekleyiniz</p>
+		</div>
+	</div>
+</div>

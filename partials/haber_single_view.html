@@ -1,0 +1,30 @@
+<div id="deneme" class="row  animated fadeIn" ng-show="haber">
+	<div class="col-lg-12 haber">
+		<noscript><img class="haber_resim img-responsive text-center" src='{{haber.ImageURL || "http://placehold.it/350x150" }}' /></noscript>
+		<center>
+			<img class="haber_resim img-responsive" src='{{haber.ImageURL || "http://placehold.it/350x150" }}'  />
+		</center>
+
+		<div class="haber_baslik source text-center">
+			<h2>{{haber.Title}}</h2>
+			<p>{{haber.Spot || haber.Title + " haberini görüntülemek için dokunun"}}</p>
+		</div>
+		
+		<div class="text-center">
+			<a href="#/kategori/{{haber.CategoryID}}" class="btn btn-primary"><strong>{{haber.Category}}</strong> kategorisinden daha fazla haber oku</a>
+		</div>
+		<p class="haber_detay" ng-bind-html="haber_detay"></p>
+
+	</div>
+
+</div>
+
+<div class="row" ng-show="error">
+	<div class="col-lg-12">
+		<div class="alert alert-dismissable alert-warning" style="margin-top:100px">
+			<button type="button" class="close" data-dismiss="alert">×</button>
+			<h4>Emin misiniz ?</h4>
+			<p>Verdiğiniz url geçersiz gözüküyor, internet bağlantınızı ve url'i kontrol edin lütfen </br> <a href="#/" class="alert-link">Anasayfaya dönüp tekrar denemek ister misiniz ?</a></p>
+		</div>
+	</div>
+</div>
