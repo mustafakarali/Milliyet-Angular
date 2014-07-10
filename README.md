@@ -8,7 +8,7 @@ Milliyet.com.tr private endpointleri şuradan bulabilirsiniz :   https://gist.gi
 
 
 
-Eklenecek özellikler
-*Sayfalama
-*Arama
-*Kategoriler
+###Eklenecek özellikler
+* Sayfalama
+* Arama
+* Kategoriler
