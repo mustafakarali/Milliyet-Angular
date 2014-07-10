@@ -5,3 +5,10 @@ Milliyet.com.tr private endpointleri kullanarak yapmaya başladığım asıl ama
 
 
 Milliyet.com.tr private endpointleri şuradan bulabilirsiniz :   https://gist.github.com/BatuhanK/71e048d1007d58fa7de0 
+
+
+
+Eklenecek özellikler
+*Sayfalama
+*Arama
+*Kategoriler
